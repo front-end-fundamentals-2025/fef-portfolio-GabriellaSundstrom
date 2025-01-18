@@ -1,0 +1,30 @@
+/* Website font and background color*/
+*{
+    background-color: rgb(255, 166, 234);
+  font-family: "Poiret One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*Headline*/
+h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white; 
+}
+/*Listed items*/
+ul {
+    list-style-type: none;
+    padding-left: 0%;
+    margin-bottom: 5%;
+}
+/*Appearance of links*/
+a {
+    color: rgb(251, 107, 148);
+}
+/*Body text and footer*/
+p {
+    margin-top: 5%;
+    color: white; 
+}
+
+
