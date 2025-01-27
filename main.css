@@ -5,26 +5,77 @@
   font-weight: 400;
   font-style: normal;
 }
+
 /*Headline*/
 h1 {
     margin-top: 5%;
     margin-bottom: 5%;
     color: white; 
 }
+
+header {
+    display: flex;
+    align-items: center;
+}
+
 /*Listed items*/
 ul {
+    display: flex;
     list-style-type: none;
     padding-left: 0%;
     margin-bottom: 5%;
 }
+/*Space between listed items*/
+li {
+    margin-left: 3rem;
+}
+
 /*Appearance of links*/
 a {
     color: rgb(251, 107, 148);
 }
 /*Body text and footer*/
 p {
-    margin-top: 5%;
     color: white; 
 }
-/*hello*/
 
+h2 {
+    margin-top: 5%;
+    color:white;
+}
+
+/*Images on project page + images on each project */
+.projects-image, .book-1-image, .book-2-image, .book-3-image, .cafe-brand-image, .coffee-book-image{
+    width: 100%;
+}
+
+figure {
+    margin-left: 0;
+}
+
+/*Evelines video responsive layout*/
+/*Put header and links to side when smaller*/
+@media screen and (max-width: 520px) {
+    header, ul {
+        flex-direction: column;
+        align-items: start;
+    }
+/*Take away space between links when smaller*/
+    li {
+        margin-left: 0;
+    }
+} 
+
+/*Projects section responsiveness to sizes (Evelines video)*/
+@media screen and (min-width: 520px) {
+    .projects-container, .book-1-container, .book-2-container, .book-3-container, .cafe-brand-container, .coffee-book-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 730px) {
+    .projects-container, .book-1-container, .book-2-container, .book-3-container, .cafe-brand-container, .coffee-book-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
