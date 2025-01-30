@@ -44,16 +44,18 @@ h2 {
     color:white;
 }
 
-/*maybe make more centered*/
-/*projects-container {
-padding-left: 10%;
-}*/
-
 /*Images on project page + images on each project */
 .projects-image, .book-1-image, .book-2-image, .book-3-image, 
 .cafe-brand-image, .coffee-book-image,
 .tastly-image, .hellokitty-image, .magazine-image {
     width: 100%;
+}
+
+.me-image {
+width: 30%;
+padding-left: 2%;
+margin-top: 2%;
+margin-bottom: 2%;
 }
 
 figure {
