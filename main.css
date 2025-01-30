@@ -1,6 +1,6 @@
 /* Website font and background color*/
 *{
-    background-color: rgb(255, 166, 234);
+    background-color: rgb(251, 209, 241);
   font-family: "Poiret One", serif;
   font-weight: 400;
   font-style: normal;
@@ -44,8 +44,15 @@ h2 {
     color:white;
 }
 
+/*maybe make more centered*/
+/*projects-container {
+padding-left: 10%;
+}*/
+
 /*Images on project page + images on each project */
-.projects-image, .book-1-image, .book-2-image, .book-3-image, .cafe-brand-image, .coffee-book-image{
+.projects-image, .book-1-image, .book-2-image, .book-3-image, 
+.cafe-brand-image, .coffee-book-image,
+.tastly-image, .hellokitty-image, .magazine-image {
     width: 100%;
 }
 
@@ -68,14 +75,18 @@ figure {
 
 /*Projects section responsiveness to sizes (Evelines video)*/
 @media screen and (min-width: 520px) {
-    .projects-container, .book-1-container, .book-2-container, .book-3-container, .cafe-brand-container, .coffee-book-container {
+    .projects-container, .book-1-container, .book-2-container, 
+    .book-3-container, .cafe-brand-container, .coffee-book-container,
+    .tastly-container, .hellokitty-container, .magazine-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width: 730px) {
-    .projects-container, .book-1-container, .book-2-container, .book-3-container, .cafe-brand-container, .coffee-book-container {
+    .projects-container, .book-1-container, .book-2-container, 
+    .book-3-container, .cafe-brand-container, .coffee-book-container,
+    .tastly-container, .hellokitty-container, .magazine-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
