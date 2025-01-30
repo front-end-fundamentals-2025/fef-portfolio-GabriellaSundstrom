@@ -62,7 +62,8 @@ figure {
     margin-left: 0;
 }
 
-/*Evelines video responsive layout*/
+/*The following lines of code were inspired by Eveline Ingessons videos, https://www.youtube.com/watch?v=yvqDrz2D_K8
+and https://www.youtube.com/watch?v=S7zxHn6qhQA*/
 /*Put header and links to side when smaller*/
 @media screen and (max-width: 520px) {
     header, ul {
