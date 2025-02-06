@@ -1,0 +1,32 @@
+/*Contact form design, following code inspired by https://codepen.io/kevinpowell/pen/XWJJmLz */
+* {
+    font-family: "Poiret One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*Space between boxes*/
+form {
+    display: grid;
+    grid-gap: 1rem;
+    }
+/*Box + text design*/
+input {
+    font-size: large;
+    padding: 0.4em;
+    border:  2px solid;
+    border-color: rgb(251, 107, 148);
+    justify-self: start;
+}
+
+::placeholder {
+    font-size: large;
+}
+
+.btn {
+    font-size: larger;
+    padding: 0.4em;
+    border:  2px solid;
+    margin-top: 5%;
+    justify-self: start;
+}
+

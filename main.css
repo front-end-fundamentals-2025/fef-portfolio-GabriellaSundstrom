@@ -63,7 +63,7 @@ figure {
 }
 
 /*The following lines of code were inspired by Eveline Ingessons videos, https://www.youtube.com/watch?v=yvqDrz2D_K8
-and https://www.youtube.com/watch?v=S7zxHn6qhQA*/
+and https://www.youtube.com/watch?v=S7zxHn6qhQA */
 /*Put header and links to side when smaller*/
 @media screen and (max-width: 520px) {
     header, ul {
@@ -93,3 +93,41 @@ and https://www.youtube.com/watch?v=S7zxHn6qhQA*/
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/*Change link color on hover*/
+a:hover {
+    color: rgb(65, 193, 252);
+    
+}
+
+/* Animations for submit button hover inspired by https://css-tricks.com/almanac/properties/a/animation/ */
+
+.btn:hover {
+    color: rgb(251, 107, 148);
+    border-color:rgb(251, 107, 148);
+    animation:
+    lift
+    2s
+    ease-in-out
+    infinite; 
+    transform: translateY(0);
+}
+
+@keyframes lift {
+    0%, 100% {
+        background-color: rgb(209, 245, 251);
+        transform: scale(1);
+        }
+    25% {
+transform: scale(1.2);
+    }
+    50% {
+        background-color: rgb(205, 172, 252) ;
+        transform: translateY(-10px) scale(1.2);
+        }
+        75% {
+            transform: scale(1.2);
+        }
+}
+
+
